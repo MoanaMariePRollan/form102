@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Friend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .media-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .media-section img,
+        .media-section video {
+            width: 250px;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .text {
+            max-width: 400px;
+        }
+        fieldset {
+            width: 600px;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .form-row label {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BE MY FRIEND</h1>
+
+    <!-- Picture Section -->
+    <div class="media-section">
+        <img src=https://media.makeameme.org/created/hello-be-my.jpg
+     alt="Hello — be my friend please (Minion)" 
+     style="float;left: ; width: 300px;"
+         <br><br>
+        <div class="text">
+            <div style="width: 20px;"></div>
+            <p> Friendship is one of the most precious gifts we can share with someone. It's about laughter, trust, and being there for each other through happy and tough times. When we say "Be my friend", its more than just an invitation-it's a promise to listen, to care,and to make life a little brighter together. So, will you take my hand and be my friend?</p>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="media-section">
+        <video controls width="640">
+            <source src="Despicable Me 2 _ Minions Banana Song (2013) SNSD TTS.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="width: 20px;"></div>
+        <div class="text">
+            <br><br>
+            <p>Just like the Minions in the "Banana" video, I believe friendship should be full of laughter, fun, and a little bit of silliness. The Minions don't care about differences-they just enjoy being together, singing, and having a good time (especially when bananas are involved!). <br> That's exactly the kind of friend I want to be-someone who can make you smile on bad days, share random silly moments, and stick by you no matter what. So...be my friend, and let's have our own Minion-style adventures!</p>
+        </div>
+    </div>
+
+    <h3>Introduction:</h3>
+    <textarea rows="6" cols="50" placeholder="Write your introduction here..."></textarea>
+
+    <h3>Description about yourself:</h3>
+    <textarea rows="6" cols="50" maxlength="400" minlength="50" placeholder="Tell something about yourself..."></textarea>
+
+    <h3>Hobbies:</h3>
+    <label><input type="checkbox" name="hobby" value="Badminton"> Badminton</label>
+    <label><input type="checkbox" name="hobby" value="Volleyball"> Volleyball</label>
+    <label><input type="checkbox" name="hobby" value="Dancing"> Dancing</label>
+    <label><input type="checkbox" name="hobby" value="Singing"> Singing</label>
+
+    <h3>Fieldset</h3>
+    <form>
+        <fieldset>
+            <div class="form-row">
+                <label>Name: <input type="text" name="name" placeholder="Enter your name"></label>
+                <label>Gender: <input type="number" id="age" name="age" min="10" max="100">
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>Age: <input type="number" name="age" min="1" max="100"></label>
+                <label>Phone No: <input type="tel" name="phone" pattern="[0-9]{11}" placeholder="11-digit number"></label>
+            </div>
+
+            <div class="form-row">
+                <label>Year of Birth: <input type="date" name="birth"></label>
+                <label>Application No: <input type="text" name="appno" value readonly></label>
+            </div>
+
+            <div class="form-row">
+                <label style="width:100%;">Email address: <input type="email" name="email" autocomplete="on"></label>
+            </div>
+
+            <input type="submit" value="Submit / Done" </button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
